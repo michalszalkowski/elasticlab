@@ -1,0 +1,427 @@
+[
+  {
+    "_id": "3b3d06b0-0622-11e8-88ac-45b2b10d62ea",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Security Event Dashboard",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":0,\"y\":3,\"w\":2,\"h\":3,\"i\":\"1\"},\"id\":\"316c8390-0622-11e8-88ac-45b2b10d62ea\",\"type\":\"visualization\",\"version\":\"6.1.2\"},{\"panelIndex\":\"3\",\"gridData\":{\"x\":8,\"y\":6,\"w\":2,\"h\":3,\"i\":\"3\"},\"id\":\"eb6e8170-0623-11e8-88ac-45b2b10d62ea\",\"type\":\"visualization\",\"version\":\"6.1.2\"},{\"panelIndex\":\"4\",\"gridData\":{\"x\":2,\"y\":3,\"w\":5,\"h\":3,\"i\":\"4\"},\"id\":\"d8893ef0-06c4-11e8-bb52-9596081fb47b\",\"type\":\"visualization\",\"version\":\"6.1.2\"},{\"panelIndex\":\"5\",\"gridData\":{\"x\":10,\"y\":6,\"w\":2,\"h\":3,\"i\":\"5\"},\"id\":\"edbf98f0-06c9-11e8-bb52-9596081fb47b\",\"type\":\"visualization\",\"version\":\"6.1.2\"},{\"panelIndex\":\"6\",\"gridData\":{\"x\":0,\"y\":6,\"w\":2,\"h\":3,\"i\":\"6\"},\"id\":\"45f82190-06ca-11e8-bb52-9596081fb47b\",\"type\":\"visualization\",\"version\":\"6.1.2\"},{\"panelIndex\":\"7\",\"gridData\":{\"x\":2,\"y\":6,\"w\":5,\"h\":3,\"i\":\"7\"},\"id\":\"8d4f1210-06ca-11e8-bb52-9596081fb47b\",\"type\":\"visualization\",\"version\":\"6.1.2\"},{\"panelIndex\":\"8\",\"gridData\":{\"x\":0,\"y\":0,\"w\":2,\"h\":3,\"i\":\"8\"},\"id\":\"2a951af0-06cc-11e8-bb52-9596081fb47b\",\"type\":\"visualization\",\"version\":\"6.1.2\"},{\"panelIndex\":\"9\",\"gridData\":{\"x\":2,\"y\":0,\"w\":5,\"h\":3,\"i\":\"9\"},\"id\":\"6a713820-06cc-11e8-bb52-9596081fb47b\",\"type\":\"visualization\",\"version\":\"6.1.2\"},{\"panelIndex\":\"10\",\"gridData\":{\"x\":8,\"y\":0,\"w\":4,\"h\":3,\"i\":\"10\"},\"id\":\"46719a80-06ce-11e8-bb52-9596081fb47b\",\"type\":\"visualization\",\"version\":\"6.1.2\"},{\"panelIndex\":\"11\",\"gridData\":{\"x\":8,\"y\":3,\"w\":2,\"h\":3,\"i\":\"11\"},\"version\":\"6.1.2\",\"type\":\"visualization\",\"id\":\"dde9f4c0-06d8-11e8-ad67-1f1e5ffa6ee3\"},{\"panelIndex\":\"12\",\"gridData\":{\"x\":10,\"y\":3,\"w\":2,\"h\":3,\"i\":\"12\"},\"version\":\"6.1.2\",\"type\":\"visualization\",\"id\":\"bce92a20-06d8-11e8-ad67-1f1e5ffa6ee3\"}]",
+      "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+      "uiStateJSON": "{\"P-4\":{\"vis\":{\"legendOpen\":false}},\"P-7\":{\"vis\":{\"legendOpen\":false}}}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "0f2ea510-0622-11e8-88ac-45b2b10d62ea",
+    "_type": "search",
+    "_source": {
+      "title": "XSS attack detect",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "_score",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"55b618e0-06d8-11e8-ad67-1f1e5ffa6ee3\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"XSS attack detect\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "924a3940-0623-11e8-88ac-45b2b10d62ea",
+    "_type": "search",
+    "_source": {
+      "title": "Login",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"55b618e0-06d8-11e8-ad67-1f1e5ffa6ee3\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"Login\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "e2fe2620-06c9-11e8-bb52-9596081fb47b",
+    "_type": "search",
+    "_source": {
+      "title": "Logout",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"55b618e0-06d8-11e8-ad67-1f1e5ffa6ee3\",\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"Logout\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "40152f80-06ce-11e8-bb52-9596081fb47b",
+    "_type": "search",
+    "_source": {
+      "title": "SECURITY EVENT",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"55b618e0-06d8-11e8-ad67-1f1e5ffa6ee3\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"SECURITY EVENT\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "3c926e30-06ca-11e8-bb52-9596081fb47b",
+    "_type": "search",
+    "_source": {
+      "title": "SqlInjection",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"55b618e0-06d8-11e8-ad67-1f1e5ffa6ee3\",\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"SqlInjection\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "1c372070-06cc-11e8-bb52-9596081fb47b",
+    "_type": "search",
+    "_source": {
+      "title": "LoginFail",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"55b618e0-06d8-11e8-ad67-1f1e5ffa6ee3\",\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"LoginFail\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "808829f0-06d8-11e8-ad67-1f1e5ffa6ee3",
+    "_type": "search",
+    "_source": {
+      "title": "Error",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"55b618e0-06d8-11e8-ad67-1f1e5ffa6ee3\",\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"message: Error\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "af41ae60-06d8-11e8-ad67-1f1e5ffa6ee3",
+    "_type": "search",
+    "_source": {
+      "title": "WARN",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"55b618e0-06d8-11e8-ad67-1f1e5ffa6ee3\",\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"message: WARN\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "cff0af80-06d8-11e8-ad67-1f1e5ffa6ee3",
+    "_type": "search",
+    "_source": {
+      "title": "ERROR",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"55b618e0-06d8-11e8-ad67-1f1e5ffa6ee3\",\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"message: ERROR\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "d8893ef0-06c4-11e8-bb52-9596081fb47b",
+    "_type": "visualization",
+    "_source": {
+      "title": "XSS Minute by Minute",
+      "visState": "{\"title\":\"XSS Minute by Minute\",\"type\":\"histogram\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "0f2ea510-0622-11e8-88ac-45b2b10d62ea",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "eb6e8170-0623-11e8-88ac-45b2b10d62ea",
+    "_type": "visualization",
+    "_source": {
+      "title": "Login - Visualization",
+      "visState": "{\"title\":\"Login - Visualization\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":60}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "924a3940-0623-11e8-88ac-45b2b10d62ea",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "316c8390-0622-11e8-88ac-45b2b10d62ea",
+    "_type": "visualization",
+    "_source": {
+      "title": "XSS attack detect - Counter",
+      "visState": "{\"title\":\"XSS attack detect - Counter\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":60}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "0f2ea510-0622-11e8-88ac-45b2b10d62ea",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "6a713820-06cc-11e8-bb52-9596081fb47b",
+    "_type": "visualization",
+    "_source": {
+      "title": "LoginFail - Minute by Minute",
+      "visState": "{\"title\":\"LoginFail - Minute by Minute\",\"type\":\"line\",\"params\":{\"type\":\"line\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"line\",\"mode\":\"normal\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "1c372070-06cc-11e8-bb52-9596081fb47b",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "edbf98f0-06c9-11e8-bb52-9596081fb47b",
+    "_type": "visualization",
+    "_source": {
+      "title": "Logout - Counter",
+      "visState": "{\"title\":\"Logout - Counter\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":60}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "e2fe2620-06c9-11e8-bb52-9596081fb47b",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "8d4f1210-06ca-11e8-bb52-9596081fb47b",
+    "_type": "visualization",
+    "_source": {
+      "title": "SqlInjection - Minute by Minute",
+      "visState": "{\"title\":\"SqlInjection - Minute by Minute\",\"type\":\"histogram\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "3c926e30-06ca-11e8-bb52-9596081fb47b",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "46719a80-06ce-11e8-bb52-9596081fb47b",
+    "_type": "visualization",
+    "_source": {
+      "title": "All SECURITY EVENT - Counter",
+      "visState": "{\"title\":\"All SECURITY EVENT - Counter\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":60}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "40152f80-06ce-11e8-bb52-9596081fb47b",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "2a951af0-06cc-11e8-bb52-9596081fb47b",
+    "_type": "visualization",
+    "_source": {
+      "title": "LoginFail - Counter",
+      "visState": "{\"title\":\"LoginFail - Counter\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":60}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "1c372070-06cc-11e8-bb52-9596081fb47b",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "45f82190-06ca-11e8-bb52-9596081fb47b",
+    "_type": "visualization",
+    "_source": {
+      "title": "SqlInjection - Counter",
+      "visState": "{\"title\":\"SqlInjection - Counter\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":60}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "3c926e30-06ca-11e8-bb52-9596081fb47b",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "bce92a20-06d8-11e8-ad67-1f1e5ffa6ee3",
+    "_type": "visualization",
+    "_source": {
+      "title": "WARN - Counter",
+      "visState": "{\"title\":\"WARN - Counter\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":60}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "af41ae60-06d8-11e8-ad67-1f1e5ffa6ee3",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "dde9f4c0-06d8-11e8-ad67-1f1e5ffa6ee3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ERROR - Counter",
+      "visState": "{\"title\":\"ERROR - Counter\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":60}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "cff0af80-06d8-11e8-ad67-1f1e5ffa6ee3",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  }
+]

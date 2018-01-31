@@ -1,0 +1,59 @@
+version: '3'
+services:
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch-platinum:${TAG}
+    container_name: elasticsearch
+    environment: ['http.host=0.0.0.0', 'transport.host=127.0.0.1', 'ELASTIC_PASSWORD=${ELASTIC_PASSWORD}']
+    ports: ['127.0.0.1:9200:9200']
+    networks: ['stack']
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:${TAG}
+    container_name: kibana
+    environment:
+      - ELASTICSEARCH_USERNAME=kibana
+      - ELASTICSEARCH_PASSWORD=${ELASTIC_PASSWORD}
+    ports: ['127.0.0.1:5601:5601']
+    networks: ['stack']
+    depends_on: ['elasticsearch']
+
+  logstash:
+    image: docker.elastic.co/logstash/logstash:${TAG}
+    container_name: logstash
+    environment:
+      - 'xpack.monitoring.elasticsearch.password=${ELASTIC_PASSWORD}'
+    volumes: ['./config/logstash.conf:/usr/share/logstash/pipeline/logstash.conf', 'app-volume:/tmp']
+    networks: ['stack']
+    depends_on: ['elasticsearch', 'setup_logstash']
+
+  setup_logstash:
+    image: centos:7
+    container_name: setup_logstash
+    volumes: ['./scripts/setup-logstash.sh:/usr/local/bin/setup-logstash.sh:ro']
+    command: ['/bin/bash', '-c', 'cat /usr/local/bin/setup-logstash.sh | tr -d "\r" | bash']
+    environment: ['ELASTIC_PASSWORD=${ELASTIC_PASSWORD}']
+    networks: ['stack']
+    depends_on: ['elasticsearch']
+
+  simulation_app:
+    image: szalek/simulation_app
+    build: app
+    container_name: simulation_app
+    ports: ['127.0.0.1:8090:8090']
+    networks: ['stack']
+    volumes: ['app-volume:/tmp']
+
+  setup_kibana:
+    image: centos:7
+    container_name: setup_kibana
+    volumes: ['./scripts/setup-kibana.sh:/usr/local/bin/setup-kibana.sh:ro']
+    command: ['/bin/bash', '-c', 'cat /usr/local/bin/setup-kibana.sh | tr -d "\r" | bash']
+    environment: ['ELASTIC_PASSWORD=${ELASTIC_PASSWORD}']
+    networks: ['stack']
+    depends_on: ['elasticsearch']
+
+networks: {stack: {}}
+
+volumes:
+     app-volume:

@@ -22,4 +22,7 @@
 # Example Dashboard
 
 ![Security Event Dashboard](image/img.png)
+
+# Example Dashboard
+
 ![Security Event Dashboard](image/img2.png)
